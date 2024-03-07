@@ -34,7 +34,7 @@ const testimonials: TestimonialAttributes[] = [
     position: "CEO",
     company: "Aimazong",
     image: "/src/assets/jeff.jpg",
-    content: `The development team at NexGen is unparalleled. Their expertise and dedication have significantly contributed to the success of our digital initiatives.`,
+    content: `The development team at Xcute is unparalleled. Their expertise and dedication have significantly contributed to the success of our digital initiatives.`,
   },
 ];
 
