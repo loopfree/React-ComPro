@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
-import meetingImage from "../../src/assets/meeting.jpg";
+import meetingImage from "../../src/assets/meeting.webp";
 
 const Overview = () => {
   return (

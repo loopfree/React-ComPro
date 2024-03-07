@@ -1,5 +1,5 @@
 import { Flex, Box, Heading, Text, Button } from "@chakra-ui/react";
-import projectTeam from "../../src/assets/project-team.png";
+import projectTeam from "../../src/assets/project-team.webp";
 
 const Service = () => {
   return (

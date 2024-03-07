@@ -13,8 +13,8 @@ import {
 
 import { ImQuotesLeft } from "react-icons/im";
 
-import yilongImage from "../../src/assets/yilong.jpg";
-import jeffImage from "../../src/assets/jeff.jpg";
+import yilongImage from "../../src/assets/yilong.webp";
+import jeffImage from "../../src/assets/jeff.webp";
 
 interface TestimonialAttributes {
   name: string;
