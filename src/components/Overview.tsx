@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
+import meetingImage from "../../src/assets/meeting.jpg";
 
 const Overview = () => {
   return (
@@ -7,7 +8,7 @@ const Overview = () => {
         <Box
           w={{ base: "100%", md: "100%", lg: "50%" }}
           h={{ base: "25vh", md: "30vh", lg: "60vh" }}
-          bgImage="url(/src/assets/meeting.jpg)"
+          bgImage={`url(${meetingImage})`}
           bgSize="cover"
           bgPosition="center"
         ></Box>

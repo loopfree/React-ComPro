@@ -13,6 +13,9 @@ import {
 
 import { ImQuotesLeft } from "react-icons/im";
 
+import yilongImage from "../../src/assets/yilong.jpg";
+import jeffImage from "../../src/assets/jeff.jpg";
+
 interface TestimonialAttributes {
   name: string;
   position: string;
@@ -26,14 +29,14 @@ const testimonials: TestimonialAttributes[] = [
     name: "Yilong Ma",
     position: "CEO",
     company: "Struck by Tesla",
-    image: "/src/assets/yilong.jpg",
+    image: yilongImage,
     content: `The development team at XcuteProject has been instrumental in streamlining our projects. Their project managers are true professionals, ensuring our goals are met on time and within budget.`,
   },
   {
     name: "Jeff Bezai",
     position: "CEO",
     company: "Aimazong",
-    image: "/src/assets/jeff.jpg",
+    image: jeffImage,
     content: `The development team at Xcute is unparalleled. Their expertise and dedication have significantly contributed to the success of our digital initiatives.`,
   },
 ];

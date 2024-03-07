@@ -1,4 +1,5 @@
 import { Flex, Box, Heading, Text, Button } from "@chakra-ui/react";
+import projectTeam from "../../src/assets/project-team.png";
 
 const Service = () => {
   return (
@@ -7,7 +8,7 @@ const Service = () => {
         <Box
           w={{ base: "100%", md: "100%", lg: "50%" }}
           h={{ base: "25vh", md: "30vh", lg: "60vh" }}
-          bgImage="url(/src/assets/project-team.png)"
+          bgImage={`url(${projectTeam})`}
           bgSize="cover"
           bgPosition="center"
         ></Box>
