@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
+import {
+  Link as ChakraLink,
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Button,
+} from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import meetingImage from "../../src/assets/meeting.webp";
 
 const Overview = () => {
@@ -59,7 +67,13 @@ const Overview = () => {
               }}
               variant="solid"
             >
-              Learn More
+              <ChakraLink
+                as={RouterLink}
+                to="/about"
+                _hover={{ textDecoration: "none" }}
+              >
+                Learn More
+              </ChakraLink>
             </Button>
           </Flex>
         </Box>

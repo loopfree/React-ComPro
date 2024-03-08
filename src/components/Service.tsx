@@ -1,4 +1,12 @@
-import { Flex, Box, Heading, Text, Button } from "@chakra-ui/react";
+import {
+  Link as ChakraLink,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  Button,
+} from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import projectTeam from "../../src/assets/project-team.webp";
 
 const Service = () => {
@@ -56,7 +64,13 @@ const Service = () => {
               }}
               variant="solid"
             >
-              Learn More
+              <ChakraLink
+                as={RouterLink}
+                to="/services"
+                _hover={{ textDecoration: "none" }}
+              >
+                Learn More
+              </ChakraLink>
             </Button>
           </Flex>
         </Box>
