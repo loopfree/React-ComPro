@@ -1,24 +1,43 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Link, Image } from "@chakra-ui/react";
+import logo from "../../src/assets/logo.webp";
 
 const Navbar = () => {
   return (
-    <Box bg="white" p={4} pl={24} pr={24} position="sticky" top="0" zIndex="1">
+    <Box
+      bg="white"
+      p={4}
+      pl={24}
+      pr={24}
+      position="sticky"
+      top="0"
+      zIndex="1"
+      boxShadow="xl"
+    >
       <Flex
         direction={{ base: "column", md: "row", lg: "row" }}
         justifyContent="space-between"
         alignItems="center"
       >
-        <Link
-          href="#"
-          color="purple.400"
-          fontSize="3xl"
-          fontWeight="500"
-          fontFamily="Tektur"
-          textDecoration="none"
-          _hover={{ textDecoration: "none" }}
-        >
-          XcuteProject
-        </Link>
+        <Flex dir="row">
+          <Image
+            mr={2}
+            src={logo}
+            alt="XcuteProject Logo"
+            boxSize="50px"
+            display={{ base: "none", md: "block", lg: "block" }}
+          />
+          <Link
+            href="#"
+            color="purple.400"
+            fontSize="3xl"
+            fontWeight="500"
+            fontFamily="Tektur"
+            textDecoration="none"
+            _hover={{ textDecoration: "none" }}
+          >
+            XcuteProject
+          </Link>
+        </Flex>
 
         <Flex>
           <Link

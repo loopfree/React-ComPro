@@ -5,7 +5,7 @@ const Hero = () => {
     <Box
       bg={{ base: "purple.400" }}
       p={4}
-      h={{ base: "27vh", md: "25vh", lg: "55vh" }}
+      h={{ base: "21vh", md: "25vh", lg: "55vh" }}
     >
       <Center
         ml={{ base: 0, md: 20, lg: 48 }}

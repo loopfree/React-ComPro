@@ -14,7 +14,7 @@ const Overview = () => {
         ></Box>
         <Box
           w={{ base: "100%", md: "100%", lg: "50%" }}
-          h={{ base: "45vh", md: "30vh", lg: "60vh" }}
+          h={{ base: "32vh", md: "30vh", lg: "60vh" }}
           px={{ base: 10, md: 24, lg: 24 }}
           py={{ base: 4, md: 8, lg: 14 }}
         >

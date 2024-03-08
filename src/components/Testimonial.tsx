@@ -46,7 +46,7 @@ const Testimonial = () => {
     <Box>
       <Flex
         px={{ base: "10px", md: 24, lg: 24 }}
-        pt={10}
+        pt={{ base: 10, md: 2, lg: 10 }}
         justifyContent="center"
       >
         <Text

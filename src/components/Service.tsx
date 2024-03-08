@@ -14,7 +14,7 @@ const Service = () => {
         ></Box>
         <Box
           w={{ base: "100%", md: "100%", lg: "50%" }}
-          h={{ base: "37vh", md: "25vh", lg: "60vh" }}
+          h={{ base: "22vh", md: "25vh", lg: "60vh" }}
           px={{ base: 10, md: 24, lg: 24 }}
           py={{ base: 4, md: 8, lg: 24 }}
         >
