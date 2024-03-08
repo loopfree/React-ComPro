@@ -1,4 +1,5 @@
-import { Box, Flex, Link, Image } from "@chakra-ui/react";
+import { Box, Flex, Link as ChakraLink, Image } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import logo from "../../src/assets/logo.webp";
 
 const Navbar = () => {
@@ -26,8 +27,9 @@ const Navbar = () => {
             boxSize="50px"
             display={{ base: "none", md: "block", lg: "block" }}
           />
-          <Link
-            href="#"
+          <ChakraLink
+            as={RouterLink}
+            to="/"
             color="purple.400"
             fontSize="3xl"
             fontWeight="500"
@@ -36,36 +38,39 @@ const Navbar = () => {
             _hover={{ textDecoration: "none" }}
           >
             XcuteProject
-          </Link>
+          </ChakraLink>
         </Flex>
 
         <Flex>
-          <Link
-            href="#"
+          <ChakraLink
+            as={RouterLink}
+            to="/about"
             color="purple.400"
             mr={{ base: 6, md: 6, lg: 4 }}
             fontWeight="600"
             fontFamily="Source Sans Pro"
           >
             About
-          </Link>
-          <Link
-            href="#"
+          </ChakraLink>
+          <ChakraLink
+            as={RouterLink}
+            to="/services"
             color="purple.400"
             mr={{ base: 6, md: 6, lg: 4 }}
             fontWeight="600"
             fontFamily="Source Sans Pro"
           >
             Services
-          </Link>
-          <Link
-            href="#"
+          </ChakraLink>
+          <ChakraLink
+            as={RouterLink}
+            to="/teams"
             color="purple.400"
             fontWeight="600"
             fontFamily="Source Sans Pro"
           >
             Teams
-          </Link>
+          </ChakraLink>
         </Flex>
       </Flex>
     </Box>
