@@ -13,7 +13,7 @@ export default function Home() {
       <Overview />
       <Service />
       <Testimonial />
-      <Footer />
+      <Footer position="static" />
     </>
   );
 }
