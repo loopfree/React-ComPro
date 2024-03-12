@@ -1,13 +1,15 @@
 import { Box, Text } from "@chakra-ui/react";
+import { ResponsiveValue } from "@chakra-ui/react";
+import * as CSS from "csstype";
 
-type FooterProps = {
-  position: "static" | "relative" | "absolute" | "fixed" | "sticky";
-};
+interface FooterProps {
+  position: ResponsiveValue<CSS.Property.Position>;
+}
 
 const Footer: React.FC<FooterProps> = ({ position }) => {
   return (
     <Box
-      py={{ base: 5, md: 6, lg: 6 }}
+      py={{ base: 7, md: 6, lg: 6 }}
       px={{ base: 10, md: 24, lg: 24 }}
       bg="purple.400"
       h={{ base: "10vh", md: "6vh", lg: "10vh" }}
