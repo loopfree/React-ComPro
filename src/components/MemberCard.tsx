@@ -20,9 +20,13 @@ function MemberCard({
   if (yearsOfExperience > 10) {
     jobTitle = "Tech Lead";
   } else if (yearsOfExperience > 5) {
-    jobTitle = "Senior Developer";
+    if (yearsOfExperience % 2 == 0) {
+      jobTitle = "Marketing Lead";
+    } else {
+      jobTitle = "Operasional Lead";
+    }
   } else {
-    jobTitle = "Junior Developer";
+    jobTitle = "Software Developer";
   }
 
   return (

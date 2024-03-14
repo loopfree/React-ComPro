@@ -1,11 +1,17 @@
-import { Box } from "@chakra-ui/react";
 import Navbar from "../../components/Navbar";
+import ServiceInfo from "../../components/ServiceInfo";
+import Pricing from "../../components/Pricing";
+import Testimonial from "../../components/Testimonial";
+import Footer from "../../components/Footer";
 
 export default function Services() {
   return (
     <>
       <Navbar />
-      <Box bg="yellow.900">ini page services</Box>
+      <ServiceInfo />
+      <Pricing />
+      <Testimonial />
+      <Footer position="static" />
     </>
   );
 }
